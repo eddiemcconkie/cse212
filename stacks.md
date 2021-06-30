@@ -5,23 +5,28 @@ description: "Lesson 1: Stacks"
 
 <!-- # Lesson 1 - Stack -->
 
-- [Introduction](#Introduction)
+<!-- - [Introduction](#Introduction)
 - [Pushing and Popping](#Pushing-and-Popping)
 - [The Call Stack](#The-Call-Stack)
 - [Efficiency](#Efficiency)
 - [Example – Reversing items](#Example-–-Reversing-items)
-- [Problem to Solve](#Problem-to-Solve)
+- [Problem to Solve](#Problem-to-Solve) -->
 
 ## Introduction
 
 <details><summary>Click here</summary>
 <!-- ```py -->
 <!-- ``` -->
-@@include[stacks_solution.py](code/stacks_solution.py)
+<!-- @@include[stacks_solution.py](code/stacks_solution.py) -->
 </details>
 
 ## Pushing and Popping
 ## The Call Stack
 ## Efficiency
 ## Example – Reversing items
+
+<pre id="example">
+./code/stacks_example.py
+</pre>
+
 ## Problem to Solve
