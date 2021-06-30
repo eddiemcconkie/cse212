@@ -64,11 +64,12 @@
     <script>
       const pre = document.querySelector('pre');
       const filepath = pre.innerText;
+      console.log(filepath);
       const fr = new FileReader();
       fr.onload = () => {
         pre.textContent = fr.result;
       }
-      
+
       fr.readAsText(filepath);
     </script>
 
