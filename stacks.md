@@ -25,8 +25,8 @@ description: "Lesson 1: Stacks"
 ## Efficiency
 ## Example – Reversing items
 
-<pre id="example">
+```py
 ./code/stacks_example.py
-</pre>
+```
 
 ## Problem to Solve
