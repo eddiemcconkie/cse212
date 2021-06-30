@@ -65,12 +65,9 @@
       const pre = document.querySelector('pre');
       const filepath = pre.innerText;
       console.log(filepath);
-      const fr = new FileReader();
-      fr.onload = () => {
-        pre.textContent = fr.result;
-      }
-
-      fr.readAsText(filepath);
+      fetch(filepath)
+        .then(response => response.text())
+        .then(text => {pre.innerText = text})
     </script>
 
     <!-- FOOTER  -->
