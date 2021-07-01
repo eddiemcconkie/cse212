@@ -26,9 +26,7 @@ description: "Lesson 1: Stacks"
 ## Example – Reversing items
 
 {% highlight python %}
-def foo
-  puts 'foo'
-end
+./code/stacks_example.py
 {% endhighlight %}
 
 ```py
