@@ -62,12 +62,12 @@
     </div>
 
     <script>
-      const preAll = document.querySelectorAll('code');
+      const preAll = document.querySelectorAll('pre');
       Array.from(preAll).forEach(pre => {
         const filepath = pre.innerText;
         fetch(filepath)
         .then(response => response.text())
-        .then(text => {pre.innerText = text})
+        .then(text => {pre.innerText = "{% highlight python %}" + text + "{% endhighlight %}"})
       });
     </script>
 
