@@ -30,12 +30,16 @@ def urMom(param):
     pass
 {% endhighlight %} -->
 
-{% highlight python %}
+<!-- {% highlight python %}
 ./code/stacks_example.py
-{% endhighlight %}
+{% endhighlight %} -->
 
-```py
+<!-- ```py -->
+<!-- ./code/stacks_example.py -->
+<!-- ``` -->
+
+<div id="code">
 ./code/stacks_example.py
-```
+</div>
 
 ## Problem to Solve
