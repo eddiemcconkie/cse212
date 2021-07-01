@@ -25,10 +25,10 @@ description: "Lesson 1: Stacks"
 ## Efficiency
 ## Example – Reversing items
 
-<!-- {% highlight python %}
+{% highlight python %}
 def urMom(param):
     pass
-{% endhighlight %} -->
+{% endhighlight %}
 
 {% highlight python %}
 ./code/stacks_example.py

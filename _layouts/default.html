@@ -62,7 +62,7 @@
     </div>
 
     <script>
-      const preAll = document.querySelectorAll('pre');
+      const preAll = document.querySelectorAll('code');
       Array.from(preAll).forEach(pre => {
         const filepath = pre.innerText;
         fetch(filepath)
