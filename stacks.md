@@ -38,7 +38,7 @@ def urMom(param):
 <!-- ./code/stacks_example.py -->
 <!-- ``` -->
 
-<div id="code">
+<div class="code">
 ./code/stacks_example.py
 </div>
 
