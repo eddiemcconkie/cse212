@@ -25,6 +25,12 @@ description: "Lesson 1: Stacks"
 ## Efficiency
 ## Example – Reversing items
 
+{% highlight python %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 ```py
 ./code/stacks_example.py
 ```
