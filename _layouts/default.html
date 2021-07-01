@@ -67,7 +67,7 @@
         const filepath = pre.innerText;
         fetch(filepath)
         .then(response => response.text())
-        .then(text => {pre.innerText = "{% highlight python %}" + text + "{% endhighlight %}"})
+        .then(text => {pre.innerText = `{% highlight python %}` + text + `{% endhighlight %}`})
       });
     </script>
 
