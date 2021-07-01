@@ -26,6 +26,11 @@ description: "Lesson 1: Stacks"
 ## Example – Reversing items
 
 {% highlight python %}
+def urMom(param):
+    pass
+{% endhighlight %}
+
+{% highlight python %}
 ./code/stacks_example.py
 {% endhighlight %}
 
