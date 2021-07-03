@@ -79,7 +79,7 @@
         copyButton.addEventListener('click', () => {
           navigator.clipboard.writeText(pre.textContent)
         })
-        pre.appendChild(copyButton)
+        pre.parentElement.appendChild(copyButton)
       })
     </script>
 
