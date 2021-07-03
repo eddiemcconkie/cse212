@@ -51,7 +51,7 @@ while len(stack) > 0:
 
 
 
-<details><summary>See Solution</summary>
+<details><summary markdown="span">See Solution</summary>
 
 ```py
 stack = []
