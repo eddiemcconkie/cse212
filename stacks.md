@@ -3,15 +3,6 @@ title: CSE 212 Final Project
 description: "Lesson 1: Stacks"
 ---
 
-<!-- # Lesson 1 - Stack -->
-
-<!-- - [Introduction](#Introduction)
-- [Pushing and Popping](#Pushing-and-Popping)
-- [The Call Stack](#The-Call-Stack)
-- [Efficiency](#Efficiency)
-- [Example – Reversing items](#Example-–-Reversing-items)
-- [Problem to Solve](#Problem-to-Solve) -->
-
 ## Introduction
 
 Stacks are a type of dynamic array that only gives the user access to the top element.
@@ -53,7 +44,7 @@ Because items are popped from the stuck in the opposite order that they are push
 stack = list("Word")
 word_reversed = ""
 while len(stack) > 0:
-  word_reversed.append(stack.pop())
+    word_reversed.append(stack.pop())
 ```
 
 ## Problem to Solve
