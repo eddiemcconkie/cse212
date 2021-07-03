@@ -14,6 +14,16 @@
         grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
         margin: 0;
       }
+
+      pre {
+        position: relative;
+      }
+
+      button {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+      }
     </style>
       
 {% seo %}
@@ -62,13 +72,19 @@
     </div>
 
     <script>
-      const preAll = document.querySelectorAll('.code');
+      const preAll = document.querySelectorAll('.pre')
       Array.from(preAll).forEach(pre => {
-        const filepath = pre.innerText;
-        fetch(filepath)
-        .then(response => response.text())
-        .then(text => {pre.innerHTML = `{% highlight python %}` + text + `{% endhighlight %}`})
-      });
+        const copyButton = document.createElement('button')
+        copyButton.innerHTML = "<code>Copy Code \</\></code>"
+        copyButton.addEventListener('click', () => {
+          navigator.clipboard.writeText(pre.textContent)
+        })
+        pre.appendChild(copyButton)
+        // const filepath = pre.innerText;
+        // fetch(filepath)
+        // .then(response => response.text())
+        // .then(text => {pre.innerHTML = `{% highlight python %}` + text + `{% endhighlight %}`})
+      })
     </script>
 
     <!-- FOOTER  -->
