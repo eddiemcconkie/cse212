@@ -38,8 +38,14 @@ def urMom(param):
 <!-- ./code/stacks_example.py -->
 <!-- ``` -->
 
-<div class="code">
-./code/stacks_example.py
-</div>
+<!-- <div class="code"> -->
+<!-- ./code/stacks_example.py -->
+<!-- </div> -->
+```py
+def doStuff():
+    pass
+
+  print("Hello world")
+```
 
 ## Problem to Solve
