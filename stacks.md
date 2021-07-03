@@ -38,7 +38,7 @@ print(stack.pop())  # 1
 ## Efficiency
 ## Example – Reversing items
 
-Because items are popped from the stuck in the opposite order that they are pushed, stacks can be useful for reversing the order of a list.
+Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of a list.
 
 ```py
 stack = list("Word")
@@ -53,7 +53,7 @@ while len(stack) > 0:
 
 <details><summary>See Solution</summary>
 
-```py
+~~~py
 stack = []
 
 stack.push(1)
@@ -63,6 +63,6 @@ three = stack.pop()
 two = stack.pop()
 one = stack.pop()
 print(one, two, three)
-```
+~~~
 
 </details>
