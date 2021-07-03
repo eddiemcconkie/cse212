@@ -53,7 +53,7 @@ while len(stack) > 0:
 
 <details><summary>See Solution</summary>
 
-~~~py
+```py
 stack = []
 
 stack.push(1)
@@ -63,6 +63,6 @@ three = stack.pop()
 two = stack.pop()
 one = stack.pop()
 print(one, two, three)
-~~~
+```
 
 </details>
