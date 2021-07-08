@@ -90,10 +90,9 @@
       pre.parentElement.appendChild(copyButton)
     })
 
-    document.querySelectorAll('textarea').map(enableTabs)
+    Array.from(document.querySelectorAll('textarea')).map(enableTabs)
 
     function enableTabs(textarea) {
-      console.log(textarea)
       textarea.onkeydown = function (e) {
         if (e.keyCode === 9) { // tab was pressed
 
