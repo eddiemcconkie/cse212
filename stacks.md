@@ -55,7 +55,7 @@ print(word_reversed)
 ## Problem to Solve
 
 <!-- <pre> -->
-<textarea style="width: 100%"></textarea>
+<textarea></textarea>
 <!-- </pre> -->
 
 <details><summary markdown="span">See Solution</summary>
