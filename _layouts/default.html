@@ -30,6 +30,8 @@
 
     textarea {
       width: 100%;
+      min-height: 100px;
+      max-height: 400px;
       tab-size: 4;
     }
   </style>
@@ -101,13 +103,10 @@
       // textarea.style.height = textarea.scrollHeight
       
       // Fit size to contents
-      let maxHeight = 400
-      const resizeTextarea = (e) => {
+      textarea.oninput =  (e) => {
         e.target.style.height = ""
-        e.target.style.height = Math.min(e.target.scrollHeight, maxHeight) + "px"
+        e.target.style.height = e.target.scrollHeight + "px"
       }
-      textarea.onload = resizeTextarea
-      textarea.oninput = resizeTextarea
       
       // Enable tabs
       textarea.onkeydown = function (e) {
