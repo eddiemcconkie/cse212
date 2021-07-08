@@ -57,7 +57,7 @@ print(word_reversed)
 <textarea>
 # Write your code here!
 stack = []
-</textarea>
+stack.append(1)</textarea>
 
 <details><summary markdown="span">See Solution</summary>
 
