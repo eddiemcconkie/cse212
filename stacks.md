@@ -27,7 +27,7 @@ print(stack)
 # [ 1, 2, 3 ]
 ```
 
-The `pop()` function removes the top item and returns its value.
+The `pop()` function removes the top item and returns its value, allowing you to store the popped value in another variable. In the example below, the values popped from the stack are returned to the `print()` function and displayed.
 
 ```py
 print(stack.pop())  # 3
@@ -47,6 +47,9 @@ stack = list("Word")
 word_reversed = ""
 while len(stack) > 0:
     word_reversed.append(stack.pop())
+
+print(word_reversed)
+# "droW"
 ```
 
 ## Problem to Solve
