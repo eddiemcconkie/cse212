@@ -95,9 +95,9 @@
 
     function setupTextarea(textarea) {
       // Fit size to contents
-      textarea.oninput = () => {
-        textarea.style.height = ""
-        textarea.style.height = textarea.scrollHeight + "px" + 3
+      textarea.oninput = (e) => {
+        e.target.style.height = ""
+        e.target.style.height = e.target.scrollHeight + "px" + 3
       }
       
       // Enable tabs
