@@ -54,9 +54,11 @@ print(word_reversed)
 
 ## Problem to Solve
 
-<!-- <pre> -->
-<textarea></textarea>
-<!-- </pre> -->
+<textarea>
+# Write your code here!
+stack = []
+
+</textarea>
 
 <details><summary markdown="span">See Solution</summary>
 
