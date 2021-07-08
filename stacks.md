@@ -12,7 +12,7 @@ Stacks are a type of dynamic array that only gives the user access to the top el
 
 The functions used for modifying the top element of a stack are called `push` and `pop`.
 
-![push and pop](./img/stack01.drawio.png)
+![push and pop](img/stack01.drawio.png)
 
 Python uses the `append()` function for pushing an item to the top of the stack.
 
@@ -37,6 +37,10 @@ print(stack.pop())  # 1
 
 
 ## The Call Stack
+
+![push and pop](img/stack02.drawio.png)
+
+
 ## Efficiency
 ## Example – Reversing items
 
@@ -57,7 +61,7 @@ print(word_reversed)
 <textarea>
 # Write your code here!
 stack = []
-stack.append(1)</textarea>
+</textarea>
 
 <details><summary markdown="span">See Solution</summary>
 
@@ -74,3 +78,5 @@ print(one, two, three)
 ```
 
 </details>
+
+<!-- Primary Color: #0F80D0 -->

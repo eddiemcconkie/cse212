@@ -95,13 +95,7 @@
 
     Array.from(document.querySelectorAll('textarea')).map(setupTextarea)
 
-    function setupTextarea(textarea) {
-      // Initialize text
-      // textarea.innerText = "# Write your code here!"
-      
-      // textarea.style.height = ""
-      // textarea.style.height = textarea.scrollHeight
-      
+    function setupTextarea(textarea) {      
       // Fit size to contents
       textarea.oninput =  (e) => {
         e.target.style.height = ""
