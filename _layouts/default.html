@@ -96,6 +96,7 @@
     function setupTextarea(textarea) {
       // Fit size to contents
       textarea.oninput = (e) => {
+        console.log(e.target.style.height)
         e.target.style.height = ""
         e.target.style.height = e.target.scrollHeight + "px" + 3
       }
