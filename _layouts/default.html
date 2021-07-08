@@ -97,11 +97,14 @@
       // Initialize text
       // textarea.innerText = "# Write your code here!"
       
-      textarea.style.height = ""
-      textarea.style.height = textarea.scrollHeight
+      // textarea.style.height = ""
+      // textarea.style.height = textarea.scrollHeight
       let maxHeight = 400
       // Fit size to contents
-      textarea.oninput = (e) => {
+      textarea.onload = resizeTextarea
+      textarea.oninput = resizeTextarea
+      
+      const resizeTextarea = (e) => {
         e.target.style.height = ""
         e.target.style.height = Math.min(e.target.scrollHeight, maxHeight) + "px"
       }
