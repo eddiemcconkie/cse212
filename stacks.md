@@ -12,14 +12,16 @@ Stacks are a type of dynamic array that only gives the user access to the top el
 
 The functions used for modifying the top element of a stack are called `push` and `pop`.
 
-The `push()` function adds an item to the top of the stack.
+![push and pop](img/stack01.drawio.png)
+
+Python uses the `append()` function for pushing an item to the top of the stack.
 
 ```py
 stack = []
 
-stack.push(1)
-stack.push(2)
-stack.push(3)
+stack.append(1)
+stack.append(2)
+stack.append(3)
 
 print(stack)
 # [ 1, 2, 3 ]
@@ -56,9 +58,9 @@ while len(stack) > 0:
 ```py
 stack = []
 
-stack.push(1)
-stack.push(2)
-stack.push(3)
+stack.append(1)
+stack.append(2)
+stack.append(3)
 three = stack.pop()
 two = stack.pop()
 one = stack.pop()
