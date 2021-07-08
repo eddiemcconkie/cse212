@@ -80,6 +80,7 @@
   </div>
 
   <script>
+    // Add "Copy Code" button to pre elements
     const preAll = document.querySelectorAll('pre')
     Array.from(preAll).forEach(pre => {
       const copyButton = document.createElement('button')
@@ -90,9 +91,16 @@
       pre.parentElement.appendChild(copyButton)
     })
 
-    Array.from(document.querySelectorAll('textarea')).map(enableTabs)
+    Array.from(document.querySelectorAll('textarea')).map(setupTextarea)
 
-    function enableTabs(textarea) {
+    function setupTextarea(textarea) {
+      // Fit size to contents
+      textarea.oninput = () => {
+        textarea.style.height = ""
+        textarea.style.height = textarea.scrollHeight + "px" + 3
+      }
+      
+      // Enable tabs
       textarea.onkeydown = function (e) {
         if (e.keyCode === 9) { // tab was pressed
 
