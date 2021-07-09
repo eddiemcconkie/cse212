@@ -9,7 +9,8 @@ class Stack:
         self.stack.append(value)
 
     def pop(self):
-        return self.stack.pop()
+        if len(self.stack) > 0:
+            return self.stack.pop()
 
     def peek(self):
         return self.stack[-1]
@@ -33,3 +34,6 @@ print(len(stack))
 print(stack.is_empty())
 print(stack.peek())
 print(stack)
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())

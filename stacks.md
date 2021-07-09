@@ -5,12 +5,11 @@ description: "Lesson 1: Stacks"
 
 ## Introduction
 
-Stacks are a type of dynamic array that only gives the user access to the top element. They are Last In First Out (LIFO)
-
+Stacks are a **Last In First Out (LIFO)** type of dynamic array that only gives the user access to the top element. Elements can be placed on top of the stack, and can be removed from the top. Unlike regular dynamic arrays, elements cannot be placed in the middle of the stack.
 
 ## Pushing and Popping
 
-The functions used for modifying the top element of a stack are called `push` and `pop`.
+The functions used for modifying the stack are called `push` and `pop`.
 
 ![push and pop](img/stack01.drawio.png)
 
@@ -52,26 +51,39 @@ Another good example of how stacks are used is the CallStack. The CallStack keep
 As each function is called, it is added to the CallStack. When a function finishes or returns a value, it pops the top function off the CallStack and reverts to the previous program state. The CallStack comes especially in handy when debugging. If an error occurs in one of your functions, the CallStack can tell you which functions were called to reach that point, making it much easier to track the source of the error.
 
 
-## Examples
+## Practice
 
-```py
+In the editor below, fill in the rest of the brackets to keep track of the state of the stack after each line.
+
+<textarea>
 stack = []
 
-stack.append(1)
-stack.append(2)
-stack.append(3)
-three = stack.pop()
-two = stack.pop()
-one = stack.pop()
-print(three, two, one)
-```
+stack.append(1)  # [1]
+stack.append(2)  # [1, 2]
+stack.append(3)  # [1, 2, 3]
+stack.pop()      # [1, 2]
+stack.pop()      # [...]
+stack.append(4)  # [...]
+stack.append(5)  # [...]
+stack.pop()      # [...]
+stack.append(6)  # [...]
+stack.pop()      # [...]
+stack.pop()      # [...]
+stack.pop()      # [...]
+stack.append(7)  # [...]
+stack.append(8)  # [...]
+stack.pop()      # [...]
+stack.append(9)  # [...]
+stack.append(10)  # [...]
+stack.pop()      # [...]
+</textarea>
 
 
 ## Problem – Reversing items
 
 Time to try stacks out for yourself!
 
-Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of an array. Finish the Python code below to reverse the phrase
+Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of an array. Finish the Python code below to reverse the phrase.
 
 <textarea>
 # Write your code here!
@@ -104,7 +116,7 @@ print(phrase_reversed)
 ## Problem – Creating a Stack Class
 
 Using Python's list works pretty well, but it's still possible to access items in the middle of the list. Let's practice encapsulating our stack in a class! Try implementing:
-- The `push` and `pop` methods
+- The `push` and `pop` methods (You should not be able to pop any elements if the stack is empty. Try to do some error checking!)
 - A `peek` method, which will return the top item without removing it
 - An `is_empty` method, which will return a boolean indicating whether the stack is empty
 - Any other methods you think would be useful!
@@ -141,7 +153,8 @@ class Stack:
         self.stack.append(value)
 
     def pop(self):
-        return self.stack.pop()
+        if len(self.stack) > 0:
+            return self.stack.pop()
 
     def peek(self):
         return self.stack[-1]
@@ -155,8 +168,11 @@ class Stack:
 
     def __str__(self):
         return str(self.stack)
+
+    def clear(self):
+        self.stack = []
 ```
 
 </details>
 
-<!-- Primary Color: #0F80D0 -->
+<!-- Primary Color: #0F60D0 -->
