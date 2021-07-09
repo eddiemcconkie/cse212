@@ -98,10 +98,12 @@
 
     function setupTextarea(textarea) {      
       // Fit size to contents
-      textarea.oninput =  (e) => {
+      const updateSize = (e) => {
         e.target.style.height = ""
         e.target.style.height = e.target.scrollHeight + "px"
       }
+      textarea.oninput = updateSize
+      textarea.onclick = updateSize
       
       // Enable tabs
       textarea.onkeydown = function (e) {

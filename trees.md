@@ -1,4 +1,4 @@
 ---
 title: CSE 212 Final Project
-description: Trees
+description: "Lesson 3: Trees"
 ---

@@ -5,7 +5,7 @@ description: "Lesson 1: Stacks"
 
 ## Introduction
 
-Stacks are a type of dynamic array that only gives the user access to the top element.
+Stacks are a type of dynamic array that only gives the user access to the top element. They are Last In First Out (LIFO)
 
 
 ## Pushing and Popping
@@ -52,28 +52,7 @@ Another good example of how stacks are used is the CallStack. The CallStack keep
 As each function is called, it is added to the CallStack. When a function finishes or returns a value, it pops the top function off the CallStack and reverts to the previous program state. The CallStack comes especially in handy when debugging. If an error occurs in one of your functions, the CallStack can tell you which functions were called to reach that point, making it much easier to track the source of the error.
 
 
-## Example – Reversing items
-
-Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of a list.
-
-```py
-stack = list("Word")
-word_reversed = ""
-while len(stack) > 0:
-    word_reversed.append(stack.pop())
-
-print(word_reversed)
-# "droW"
-```
-
-## Problem to Solve
-
-<textarea>
-# Write your code here!
-stack = []
-</textarea>
-
-<details><summary markdown="span">See Solution</summary>
+## Examples
 
 ```py
 stack = []
@@ -84,7 +63,98 @@ stack.append(3)
 three = stack.pop()
 two = stack.pop()
 one = stack.pop()
-print(one, two, three)
+print(three, two, one)
+```
+
+
+## Problem – Reversing items
+
+Time to try stacks out for yourself!
+
+Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of an array. Finish the Python code below to reverse the phrase
+
+<textarea>
+# Write your code here!
+phrase = "!looc era serutcurts ataD"
+phrase_reversed = ""
+stack = []
+</textarea>
+
+<details><summary markdown="span">See the solution!</summary>
+
+```py
+phrase = "!looc era serutcurts ataD"
+phrase_reversed = ""
+stack = []
+
+for letter in phrase:
+    stack.append(letter)
+
+while len(stack) > 0:
+    last_letter = stack.pop()
+    phrase_reversed.append(last_letter)
+
+print(phrase_reversed)
+# "Data structures are cool!"
+```
+
+</details>
+
+
+## Problem – Creating a Stack Class
+
+Using Python's list works pretty well, but it's still possible to access items in the middle of the list. Let's practice encapsulating our stack in a class! Try implementing:
+- The `push` and `pop` methods
+- A `peek` method, which will return the top item without removing it
+- An `is_empty` method, which will return a boolean indicating whether the stack is empty
+- Any other methods you think would be useful!
+
+<textarea>
+# Write your code here!
+class Stack:
+
+    def __init__(self):
+        self.stack = []
+
+    def push(self, value):
+        ...
+
+    def pop(self):
+        ...
+
+    def peek(self):
+        ...
+
+    def is_empty(self):
+        ...
+</textarea>
+
+<details><summary markdown="span">See the solution!</summary>
+
+```py
+class Stack:
+    
+    def __init__(self):
+        self.stack = []
+
+    def push(self, value):
+        self.stack.append(value)
+
+    def pop(self):
+        return self.stack.pop()
+
+    def peek(self):
+        return self.stack[-1]
+
+    def is_empty(self):
+        return len(self.stack) == 0
+
+    # Here are some extra functions we can add to our Stack Class!
+    def __len__(self):
+        return len(self.stack)
+
+    def __str__(self):
+        return str(self.stack)
 ```
 
 </details>
