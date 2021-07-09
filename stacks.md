@@ -175,4 +175,10 @@ class Stack:
 
 </details>
 
+Great job on making it through this lesson! Keep studying data structures and you'll be **stacked** with knowledge!
+
+The next lesson is [Linked Lists](linked_lists.md)!
+
+Or you can jump to [Trees](trees.md)!
+
 <!-- Primary Color: #0F60D0 -->
