@@ -79,7 +79,8 @@ stack.pop()      # [...]
 </textarea>
 
 
-## Problem – Reversing items
+## Problems
+### 1. Reversing items
 
 Time to try stacks out for yourself!
 
@@ -113,7 +114,7 @@ print(phrase_reversed)
 </details>
 
 
-## Problem – Creating a Stack Class
+### 2. Creating a Stack Class
 
 Nice job on that last problem! Using Python's list works pretty well, but it's still possible to access items in the middle of the list. Let's try encapsulating our stack in a class! Try implementing:
 - The `push` and `pop` methods (You should not be able to pop any elements if the stack is empty. Try to do some error checking!)
@@ -174,6 +175,10 @@ class Stack:
 ```
 
 </details>
+
+---
+
+### Keep on learning!
 
 Great job on making it through this lesson! Keep studying data structures and you'll be **stacked** with knowledge!
 
