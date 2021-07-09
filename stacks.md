@@ -83,7 +83,7 @@ stack.pop()      # [...]
 
 Time to try stacks out for yourself!
 
-Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of an array. Finish the Python code below to reverse the phrase.
+Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of an array. See if you can finish the Python code below to reverse the phrase.
 
 <textarea>
 # Write your code here!
@@ -115,9 +115,9 @@ print(phrase_reversed)
 
 ## Problem – Creating a Stack Class
 
-Using Python's list works pretty well, but it's still possible to access items in the middle of the list. Let's practice encapsulating our stack in a class! Try implementing:
+Nice job on that last problem! Using Python's list works pretty well, but it's still possible to access items in the middle of the list. Let's try encapsulating our stack in a class! Try implementing:
 - The `push` and `pop` methods (You should not be able to pop any elements if the stack is empty. Try to do some error checking!)
-- A `peek` method, which will return the top item without removing it
+- A `peek` method, which will just look at the top item without removing it
 - An `is_empty` method, which will return a boolean indicating whether the stack is empty
 - Any other methods you think would be useful!
 
