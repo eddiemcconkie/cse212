@@ -84,7 +84,7 @@ stack.pop()      # [...]
 
 Time to try stacks out for yourself!
 
-Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of an array. See if you can finish the Python code below to reverse the phrase.
+Because items are popped from the stack in the opposite order that they are pushed, stacks can be useful for reversing the order of an array. See if you can finish the Python code below to reverse the phrase using a stack.
 
 <textarea>
 # Write your code here!
