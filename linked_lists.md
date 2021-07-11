@@ -26,8 +26,8 @@ node = linked_list.head
 while node is not None:
     # Print out the data contained in the node.
     print(node.data)
-    # node.next refers to the next node in the list.
-    # We'll assign it to our current node variable to continue traversing the list.
+    # node.next refers to the next node in the list. We'll assign it
+    # to our current node variable to continue traversing the list.
     node = node.next
 ```
 
@@ -85,8 +85,8 @@ Both types of lists have their pros and cons. Dynamic arrays give you immediate 
 
 Linked lists can be tricky. Lots of people can't make **head or tail** out of them, so way to go for making it his far!
 
-The next lesson is [Trees](trees.md)!
+The next lesson is on [Trees](trees.md)!
 
-Or review the last lesson on [Stacks](stacks.md)!
+Or review the last lesson, [Stacks](stacks.md)!
 
 <!-- Primary Color: #0F60D0 -->
