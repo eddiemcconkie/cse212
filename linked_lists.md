@@ -122,12 +122,14 @@ class LinkedList:
         if self.head:
             # 1. Connect the new node to the old head node.
             node.next = self.head
-            # 2. Connect the old head node back to the new node to doubly link it.
+            # 2. Connect the old head node back to the new node to 
+            # doubly link it.
             self.head.prev = node
             # 3. Point the head reference to the new node.
             self.head = node
         else:
-            # If the linked list has no head, it has no tail either. Set both to the new node.
+            # If the linked list has no head, it has no tail either. 
+            # Set both to the new node.
             self.head = node
             self.tail = node
 
@@ -136,20 +138,21 @@ class LinkedList:
         ...
 
     def add_after(self, value, data):
-        for node in self:
-            if node.data == value:
-                if node == self.tail:
-                    # If our target value is at the tail, call the regular add_at_tail function.
+        for curr in self:
+            if curr.data == value:
+                if curr == self.tail:
+                    # If our target value is at the tail, call the 
+                    # regular add_at_tail function.
                     self.add_at_tail(data)
                 else:
                     # Create the new node.
-                    new_node = LinkedList.Node(data)
-                    # Connect the new node to the node on the right (node.next).
-                    new_node.next = node.next
-                    node.next.prev = new_node
-                    # Connect the new node to the node on the left (node).
-                    node.next = new_node
-                    new_node.prev = node
+                    new = LinkedList.Node(data)
+                    # Connect the new node to the node on the right 
+                    new.next = curr.next
+                    curr.next.prev = new
+                    # Connect the new node to the node on the left 
+                    curr.next = new
+                    new.prev = curr
 
                 # We only want to insert after the first value.
                 break
@@ -171,7 +174,8 @@ class LinkedList:
         ...
 
     def replace(self, value, data):
-        # You may want to make use of the set_data function within the Node class.
+        # You may want to make use of the set_data function 
+        # within the Node class.
         ...
 
     def __iter__(self):
