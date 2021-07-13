@@ -109,7 +109,7 @@ linkedlist.remove_head()
 # linkedlist.remove(1)
 
 print(linkedlist)
-# Shoudl print: [7 -> 9 -> 6 -> 4 -> 8 -> 5]
+# Should print: [7 -> 9 -> 6 -> 4 -> 8 -> 5]
 
 # Using the __reversed__ method.
 print("Reversed:")

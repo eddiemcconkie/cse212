@@ -87,13 +87,13 @@ Be extra careful to make the connections are made in the right order, otherwise 
 
 ## Practice
 
-Let's work on our linked list Python class! You'll notice that the `LinkedList` has an inner class, `Node`, which will handle the data and connections for each individual node. Some of the functions we need have already been implemented, such as `add_at_head()` which will add a Node to the beginning of the list. There are a few more function that need to be completed before our linked list is ready to go. In the space below, implement the following functions:
+Let's work on our linked list Python class! In the code below you'll notice that the `LinkedList` has an inner class, `Node`, which will handle the data and connections for each individual node. Some of the functions we need have already been implemented, such as `add_at_head()` which will add a Node to the beginning of the list. There are a few more function that need to be completed before our linked list is ready to go. Copy this code into your code editor and implement the following functions:
 - `add_at_tail()` - Add a new node to the tail of the linked list.
 - `add_before()` - Find the first occurrence of a value in the list and insert a node immediately before it.
 - `replace()` - Find the first occurrence of a value and replace it with new data.
 - `remove()` - Remove a node from the linked list.
 
-<textarea>
+```py
 class LinkedList:
 
     # The linked list has a node as an inner class.
@@ -205,13 +205,13 @@ linkedlist.remove_head()
 # linkedlist.remove(1)
 
 print(linkedlist)
-# Shoudl print: [7 -> 9 -> 6 -> 4 -> 8 -> 5]
+# Should print: [7 -> 9 -> 6 -> 4 -> 8 -> 5]
 
 # Using the __reversed__ method.
 print("Reversed:")
 for node in reversed(linkedlist):
     print(node.data)
-</textarea>
+```
 
 
 ## Problem
