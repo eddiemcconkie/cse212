@@ -226,6 +226,51 @@ for node in reversed(linkedlist):
 
 Linked lists are super helpful when you need to make a lot of insertions into your list. Write a program (using the class we created) that will keep numbers in order from lowest to highest. Generate 100 numbers randomly and feed them into the list. It may be easiest to work on this problem in your code editor.
 
+<details><summary markdown="span">See the solution!</summary>
+
+```py
+### Add this function to your linked list class.
+def add_sorted(self, data):
+      # If the list is empty, initialize the list with the node.
+      if self.head is None:
+          new = LinkedList.Node(data)
+          self.head = new
+          self.tail = new
+          return
+
+      # Iterate over the nodes in the list to find the correct position.
+      for curr in self:
+          # If the data is less than the head, add at the head.
+          if curr == self.head and data <= self.head.data:
+              self.add_at_head(data)
+              return
+          # If the data is greater than the tail, add at the tail.
+          elif curr == self.tail:
+              self.add_at_tail(data)
+              return
+          # Find a position for the data in the list.
+          else:
+              if curr.data <= data < curr.next.data:
+                  new = LinkedList.Node(data)
+                  new.next = curr.next
+                  curr.next.prev = new
+                  curr.next = new
+                  new.prev = curr
+                  return
+
+#########################################################################
+
+linkedlist_sorted = LinkedList()
+
+for i in range(100):
+    number = random.randint(0, 100)
+    linkedlist_sorted.add_sorted(number)
+
+print(linkedlist_sorted)
+```
+
+</details>
+
 ---
 
 ### Keep on learning!
