@@ -93,6 +93,8 @@ Let's work on our linked list Python class! In the code below you'll notice that
 - `replace()` - Find the first occurrence of a value and replace it with new data.
 - `remove()` - Remove a node from the linked list.
 
+There is some code you can use for testing your class at the end!
+
 ```py
 class LinkedList:
 
@@ -180,12 +182,14 @@ class LinkedList:
             node = node.next
 
     def __reversed__(self):
+        # Allows you to iterate through the list backward.
         node = self.tail
         while node is not None:
             yield node
             node = node.prev
 
     def __str__(self):
+        # Returns a string representation of the list.
         data = [str(node.data) for node in self]
         return f"[{' -> '.join(data)}]"
 
@@ -216,17 +220,7 @@ for node in reversed(linkedlist):
 
 ## Problem
 
-<textarea>
-# Write your code here!
-</textarea>
-
-<details><summary markdown="span">See the solution!</summary>
-
-```py
-
-```
-
-</details>
+Linked lists are super helpful when you need to make a lot of insertions into your list. Write a program (using the class we created) that will keep numbers in order from lowest to highest. Generate 100 numbers randomly and feed them into the list. It may be easiest to work on this problem in your code editor.
 
 ---
 

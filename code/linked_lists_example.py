@@ -84,12 +84,14 @@ class LinkedList:
             node = node.next
 
     def __reversed__(self):
+        # Allows you to iterate through the list backward.
         node = self.tail
         while node is not None:
             yield node
             node = node.prev
 
     def __str__(self):
+        # Returns a string representation of the list.
         data = [str(node.data) for node in self]
         return f"[{' -> '.join(data)}]"
 
