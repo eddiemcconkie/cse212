@@ -65,7 +65,9 @@ self.head.prev = node
 self.head = node
 ```
 
-Adding a node to the middle of the linked list isn't too much harder. It just requires you to connect the new node to the nodes on the right and the left. In the code below, `curr` will be our reference to the current node and `new` will be the reference to the new node we're adding. First we need to connect the new node to the right node (`curr.next`). Second, we connect our right node back to the new node. This is probably the trickiest line since we only have a reference to our current (left) node. The code `curr.next.prev` goes from the current node to the next node (the right one) and then modifies the previous node reference. Third, we link our current node to the new node, and finally we link our new node back to the current node.
+---
+
+Adding a node to the middle of the linked list isn't too much harder. It just requires you to connect the new node to the nodes on the right and the left. In the code below, `curr` will be our reference to the current node and `new` will be the reference to the new node we're adding in. First we need to connect the new node to the right node (`curr.next`). Second, we connect our right node back to the new node. This is probably the trickiest line since we only have a reference to our current (left) node. The code `curr.next.prev` goes from the current node to the next node (the right one) and then modifies the previous node reference. Third, we link our current node to the new node, and finally we link our new node back to the current node.
 
 ![](img/linked_list04.drawio.png)
 
