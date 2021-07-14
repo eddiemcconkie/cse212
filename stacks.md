@@ -78,6 +78,32 @@ stack.append(10) # [...]
 stack.pop()      # [...]
 </textarea>
 
+<details><summary markdown="span">See the solution!</summary>
+
+```py
+stack = []
+
+stack.append(1)  # [1]
+stack.append(2)  # [1, 2]
+stack.append(3)  # [1, 2, 3]
+stack.pop()      # [1, 2]
+stack.pop()      # [1]
+stack.append(4)  # [1, 4]
+stack.append(5)  # [1, 4, 5]
+stack.pop()      # [1, 4]]
+stack.append(6)  # [1, 4, 6]
+stack.pop()      # [1, 4]
+stack.pop()      # [1]
+stack.pop()      # []
+stack.append(7)  # [7]
+stack.append(8)  # [7, 8]
+stack.pop()      # [7]
+stack.append(9)  # [7, 9]
+stack.append(10) # [7, 9, 10]
+stack.pop()      # [7, 9]
+```
+
+</details>
 
 ## Problems
 ### 1. Reversing items
