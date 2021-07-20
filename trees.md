@@ -64,7 +64,7 @@ Inserting new nodes into the tree follows a similar recursion process as our sea
 
 ![unbalanced tree](img/tree04.drawio.png)
 
-A balanced tree generally has the same number of nodes on both sides of the tree at any given position, such as this example we saw earlier. This
+A balanced tree generally has the same number of nodes on both sides of the tree at any given position, such as this example we saw earlier.
 
 ![binary search tree](img/tree03.drawio.png)
 
@@ -144,7 +144,7 @@ Here's our final tree! How did you do?
       8
 ```
 
-Notice that none of the duplicate values were inserted. This is because the `_add_recursive` function only tested to see if the new data was higher or lower. If a duplicate value was entered, the function simply does nothing.
+Notice that none of the duplicate values were inserted. This is because the `_add_recursive` function only tested to see if the new data was higher or lower. If a duplicate value is entered, the function simply does nothing.
 
 </details>
 
@@ -152,7 +152,7 @@ Notice that none of the duplicate values were inserted. This is because the `_ad
 
 Before getting into this problem, let's talk a bit more about recursion. As mentioned earlier, recursion involves a function calling itself repeatedly until an action is performed or a piece of data is found. A recursive function needs a base case, or a point in the program where the recursion knows to stop. Otherwise the function will keep calling itself forever.
 
-Let's implement the code for finding an item in the tree. The `find` function is already written. You will need to fill in the `_find_recursive` function.
+Let's implement the code for finding an item in the tree. The `find` function is already written. You will need to fill in the `_find_recursive` function. It may be easiest to copy this code into your editor to test it out.
 
 <details><summary markdown="span">Hint!</summary>
 
